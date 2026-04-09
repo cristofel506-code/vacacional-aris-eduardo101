@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reserva Pro</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <img src="img/hero.jpg.jpg">
+  <div class="overlay"></div>
+
+  <div class="hero-text">
+    <h1>Vacacional Pro</h1>
+    <p>Reserva con 50% de adelanto</p>
+  </div>
+</div>
+
+<!-- CONTENIDO -->
+<div class="container">
+
+<div class="info">
+💳 Reserva con 50% de adelanto y paga al llegar
+</div>
+
+<input type="text" id="fecha" placeholder="Entrada - Salida">
+
+<h3>🏠 Habitaciones</h3>
+
+<div class="grid">
+
+  <!-- SENCILLA -->
+  <div class="card">
+    <div class="img-box">
+      <img src="img/hero1.jpg.jpg">
+      <span class="tag">Sencilla - RD$1500</span>
+    </div>
+    <input type="number" id="s" placeholder="Cantidad">
+  </div>
+
+  <!-- CON AIRE -->
+  <div class="card">
+    <div class="img-box">
+      <img src="img/hero12.jpg.jpg">
+      <span class="tag">Con aire - RD$2000</span>
+    </div>
+    <input type="number" id="a" placeholder="Cantidad">
+  </div>
+
+  <!-- DOBLE -->
+  <div class="card">
+    <div class="img-box">
+      <img src="img/hero2.jpg.jpg">
+      <span class="tag">Doble - RD$2500</span>
+    </div>
+    <input type="number" id="d" placeholder="Cantidad">
+  </div>
+
+  <!-- TRIPLE -->
+  <div class="card">
+    <div class="img-box">
+      <img src="img/hero3.jpg.jpg">
+      <span class="tag">Triple - RD$2800</span>
+    </div>
+    <input type="number" id="t" placeholder="Cantidad">
+  </div>
+
+</div>
+<input type="number" id="personas" placeholder="Personas">
+
+<button onclick="calcular()">Calcular</button>
+
+<button id="btnConfirmar" onclick="confirmar()" style="display:none;">
+Confirmar reserva
+</button>
+
+<div id="resultado"></div>
+
+<!-- WhatsApp -->
+<a id="wa" class="whatsapp-float" target="_blank">WhatsApp</a>
+
+</div>
+
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
